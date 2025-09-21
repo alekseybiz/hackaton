@@ -24,7 +24,9 @@ async def root() -> dict:
 
 # Routers
 from app.api.regions import router as regions_router  # noqa: E402
+from app.api.analytics import router as analytics_router  # noqa: E402
 
 app.include_router(regions_router)
+app.include_router(analytics_router)
 
 
